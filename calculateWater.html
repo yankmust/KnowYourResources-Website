@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Resources</title>
+    <link rel="stylesheet" href="style_calculatewater.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbarbg">
+            <div class="navbar">
+                <img src="images/icon_green.png" class="logo">
+                <h1 class="baslik">Know Your Resources</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <img src="images/electricity.png" alt="electricity_icon" class="electricity_icon">
+                    <li><a href="electricity.html">Electricity</a>
+                        <ul>
+                            <li class="dropdown"><a href="calculateElectric.html">Calculate Your Waste</a></li>
+                            <li class="dropdown"><a href="solarpanel.html">Solar Panel</a></li>
+                            <li class="dropdown"><a href="windmill.html">Windmill</a></li>
+                            <li class="dropdown"><a href="nuclear.html">Nuclear Power Plant</a></li>
+                            <li class="dropdown"><a href="hydroelectric.html">Hydroelectric Power Plant</a></li>
+                        </ul>
+                    </li>
+                    <img src="images/drop.png" alt="waterdrop_icon" class="waterdrop_icon">
+                    <li><a href="waterresources.html">Water Resources</a>
+                        <ul>
+                            <li class="dropdown"><a href="calculateWater.html">Calculate Your Waste</a></li>
+                            <li class="dropdown"><a href="oceans.html">Oceans</a></li>
+                            <li class="dropdown"><a href="rivers.html">Rivers</a></li>
+                            <li class="dropdown"><a href="seas.html">Seas</a></li>
+                            <li class="dropdown"><a href="lakes.html">Lakes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Calculate your own waste!</h1>
+            <p>The average water consumption per person can vary significantly depending on factors such as
+                geographical location, climate, living conditions, lifestyle, and energy efficiency measures. Therefore,
+                it's challenging to provide an exact figure that applies universally. <br> However, we can offer a rough
+                estimate based on global averages just to give you an idea. </p>
+
+        </div>
+
+
+    </div>
+    <div class="xd">
+        <h1>Water Usage Calculator</h1>
+
+        <label for="appliance">Frequency of use:</label>
+        <select id="appliance">
+            <option value="4">Very Low Usage</option>
+            <option value="5">Low Usage</option>
+            <option value="6">Mid Usage</option>
+            <option value="8.5">High Usage</option>
+            <option value="10">Very High Usage</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="usage">How many person use water in the same house?:</label>
+        <input type="number" id="usage">
+
+        <br><br>
+
+        <button onclick="calculateUsage()"><span></span>Calculate</button>
+
+        <h2>Water Consumption:</h2>
+        <p id="result"></p>
+        <p id="resultw"></p>
+        <p id="resultm"></p>
+        <p id="resulty"></p>
+    </div>
+
+    <script>
+        function calculateUsage() {
+            var appliance = document.getElementById("appliance");
+            var usage = document.getElementById("usage");
+            var result = document.getElementById("result");
+            var resultw = document.getElementById("resultw");
+            var resultm = document.getElementById("resultm");
+            var resulty = document.getElementById("resulty");
+
+            var power = parseInt(appliance.value);
+            var personNumber = parseInt(usage.value);
+
+            if (power && personNumber) {
+                var energy = power * (personNumber / 10) * 300;
+                result.textContent = "Water consumption per day: " + Math.round(energy) + " liters";
+                resultw.textContent = "Water consumption per week: " + Math.round(energy * 7) + " liters";
+                resultm.textContent = "Water consumption per month: " + Math.round(energy * 31) + " liters";
+                resulty.textContent = "Water consumption per year: " + Math.round(energy * 365) + " liters";
+
+            } else {
+                result.textContent = "Please select an appliance and enter the requested data.";
+            }
+        }
+    </script>
+    <h2 class="h2xd">We’ve also provided a list that shows the average water consumption of everyday activities. Though
+        the
+        water consumption of
+        your activity may vary, it should give you a rough estimate.</h2>
+    <table>
+
+        <tr>
+            <td>Shower (8 min)</td>
+            <td>65-75 liters</td>
+
+        </tr>
+        <tr>
+            <td>One flush of toilet</td>
+            <td>12 liters</td>
+
+        </tr>
+        <tr>
+            <td>Dishwasher</td>
+            <td>15-35 liters</td>
+
+        </tr>
+        <tr>
+            <td>Washing Machine</td>
+            <td>50-60 liters</td>
+
+        </tr>
+        <tr>
+            <td>Brushing Teeth (per min)</td>
+            <td>6-10 liters</td>
+
+        </tr>
+
+    </table>
+
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2023; All Rights Reserved, designed by yankmust</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Resources</title>
+    <link rel="stylesheet" href="style_electric.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbarbg">
+            <div class="navbar">
+                <img src="images/icon_green.png" class="logo">
+                <h1 class="baslik">Know Your Resources</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <img src="images/electricity.png" alt="electricity_icon" class="electricity_icon">
+                    <li><a href="electricity.html">Electricity</a>
+                        <ul>
+                            <li class="dropdown"><a href="calculateElectric.html">Calculate Your Waste</a></li>
+                            <li class="dropdown"><a href="solarpanel.html">Solar Panel</a></li>
+                            <li class="dropdown"><a href="windmill.html">Windmill</a></li>
+                            <li class="dropdown"><a href="nuclear.html">Nuclear Power Plant</a></li>
+                            <li class="dropdown"><a href="hydroelectric.html">Hydroelectric Power Plant</a></li>
+                        </ul>
+                    </li>
+                    <img src="images/drop.png" alt="waterdrop_icon" class="waterdrop_icon">
+                    <li><a href="waterresources.html">Water Resources</a>
+                        <ul>
+                            <li class="dropdown"><a href="calculateWater.html">Calculate Your Waste</a></li>
+                            <li class="dropdown"><a href="oceans.html">Oceans</a></li>
+                            <li class="dropdown"><a href="rivers.html">Rivers</a></li>
+                            <li class="dropdown"><a href="seas.html">Seas</a></li>
+                            <li class="dropdown"><a href="lakes.html">Lakes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>What is Electricity</h1>
+            <p>Electricity is a form of energy resulting from the flow of electric charge. It powers our homes,
+                businesses, and industries, driving our modern world. It is generated through various methods,
+                including:</p>
+            <ol>
+                <li>Fossil Fuels: Power plants burn fossil fuels like coal, natural gas, and oil to produce steam, which
+                    drives turbines connected to generators.</li>
+                <li>Nuclear Energy: Nuclear power plants harness the energy released from nuclear reactions to generate
+                    steam and produce electricity through turbines.</li>
+                <li>Renewable Sources: Solar panels convert sunlight into electricity through photovoltaic cells, while
+                    wind turbines harness the power of wind to rotate their blades and generate electricity. Hydropower
+                    plants use flowing water to drive turbines, and geothermal power plants utilize heat from the
+                    Earth's core.</li>
+                <li>Other Methods: Electricity can also be produced using biomass, which involves burning organic
+                    materials, and through tidal power, which harnesses the energy of tides.</li>
+
+            </ol>
+            <p>Know Your Resources site supports 4 form of electricity generation which they are <a
+                    style="text-decoration: none;" href="solarpanel.html">solar
+                    panel</a>, <a style="text-decoration: none;" href="windmill.html">windmill</a>, <a
+                    style="text-decoration: none;" href="nuclear.html">nuclear power plant</a>, <a
+                    style="text-decoration: none;" href="hydroelectric.html">hydroelectric power plant</a>.</p>
+            <br>
+            <p>Electricity usage has become an integral part of our global society, powering countless aspects of our
+                lives. From lighting our homes and offices to running industries and facilitating communication,
+                electricity plays a crucial role worldwide. As technology advances and economies grow, the demand for
+                electricity continues to rise. Countries around the world are increasingly reliant on electricity to
+                drive progress and development. Efforts to promote energy efficiency and renewable energy sources are
+                being pursued to meet the growing demand sustainably. As we move forward, the responsible and efficient
+                use of electricity remains a key focus in ensuring a sustainable and bright future for all.</p>
+
+            <div class="highcharte">
+                <h3>Electricity consumption worldwide in 2021, by leading countries</h3>
+                <h4>(in terawatt-hours)</h4>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div id="container_electric"></div>
+
+
+    <script src="electricchart.js"></script>
+
+
+
+
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2023; All Rights Reserved, designed by yankmust</p>
+        </div>
+    </div>
+</body>
+
+</html>

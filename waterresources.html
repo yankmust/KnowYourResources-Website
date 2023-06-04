@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Resources</title>
+    <link rel="stylesheet" href="style_waterresources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbarbg">
+            <div class="navbar">
+                <img src="images/icon_green.png" class="logo">
+                <h1 class="baslik">Know Your Resources</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <img src="images/electricity.png" alt="electricity_icon" class="electricity_icon">
+                    <li><a href="electricity.html">Electricity</a>
+                        <ul>
+                            <li class="dropdown"><a href="calculateElectric.html">Calculate Your Waste</a></li>
+                            <li class="dropdown"><a href="solarpanel.html">Solar Panel</a></li>
+                            <li class="dropdown"><a href="windmill.html">Windmill</a></li>
+                            <li class="dropdown"><a href="nuclear.html">Nuclear Power Plant</a></li>
+                            <li class="dropdown"><a href="hydroelectric.html">Hydroelectric Power Plant</a></li>
+                        </ul>
+                    </li>
+                    <img src="images/drop.png" alt="waterdrop_icon" class="waterdrop_icon">
+                    <li><a href="waterresources.html">Water Resources</a>
+                        <ul>
+                            <li class="dropdown"><a href="calculateWater.html">Calculate Your Waste</a></li>
+                            <li class="dropdown"><a href="oceans.html">Oceans</a></li>
+                            <li class="dropdown"><a href="rivers.html">Rivers</a></li>
+                            <li class="dropdown"><a href="seas.html">Seas</a></li>
+                            <li class="dropdown"><a href="lakes.html">Lakes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>What is Water</h1>
+            <p>Water is a vital and transparent liquid that covers a significant portion of Earth's surface. It is
+                composed of two hydrogen atoms and one oxygen atom, forming a chemical compound known as H2O. Water is
+                essential for all known forms of life, serving as a universal solvent, a medium for chemical reactions,
+                and a crucial component of biological processes. It exists in various forms, including liquid, solid
+                (ice), and gas (water vapor). Water plays a critical role in regulating Earth's climate, shaping
+                landscapes through erosion, and sustaining ecosystems. The bodies of water types are:</p>
+            <ol>
+                <li>Oceans: Expansive saltwater bodies that dominate the Earth's surface, encompassing a diverse array
+                    of marine life and playing a critical role in regulating global climate and supporting human
+                    livelihoods.</li>
+                <li>Rivers: Natural watercourses that flow downhill, transporting freshwater from higher elevations to
+                    lower elevations, serving as vital sources of water for drinking, agriculture, and sustaining
+                    ecosystems along their banks.</li>
+                <li>Seas: Partially enclosed saltwater bodies connected to the ocean, varying in size, and often
+                    characterized by distinct ecosystems, providing resources for fishing, transportation, and
+                    recreational activities.</li>
+                <li>Lakes: Inland bodies of water surrounded by land, ranging in size from small ponds to expansive
+                    reservoirs, serving as essential sources of freshwater, supporting diverse aquatic life, and
+                    providing recreational opportunities for swimming, boating, and fishing.</li>
+
+            </ol>
+            <p>Know Your Resources site supports 4 types of bodies of water which they are <a
+                    style="text-decoration: none;" href="oceans.html">oceans</a>, <a style="text-decoration: none;"
+                    href="rivers.html">rivers</a>, <a style="text-decoration: none;" href="seas.html">seas</a>, <a
+                    style="text-decoration: none;" href="lakes.html">lakes</a>.</p>
+            <br>
+            <p>"Water consumption" refers to the amount of water used by individuals, communities, industries, and
+                agriculture for various purposes such as drinking, cooking, sanitation, irrigation, and manufacturing.
+                It encompasses both direct use, such as household water usage, and indirect use, including water
+                embedded in the production of goods and services. Efficient and sustainable water consumption practices
+                are important for conserving this vital resource and ensuring its availability for present and future
+                generations.
+
+
+
+
+            </p>
+
+            <div class="highchartw">
+                <h3>Water consumption worldwide, by leading countries</h3>
+                <h4>(in trillion liters)</h4>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div id="container_water"></div>
+
+
+    <script src="waterchart.js"></script>
+
+
+
+
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2023; All Rights Reserved, designed by yankmust</p>
+        </div>
+    </div>
+</body>
+
+</html>
